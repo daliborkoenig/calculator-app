@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator APP</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator-display">
+      <div class="display" id="display">0</div>
+      <div class="mini-display" id="mini-display">0</div>
+    </div>
+    <div class="calculator-keys">
+      <button class="key" onclick="btnPressed('%')">%</button>
+      <button class="key" onclick="btnPressed('DEL')">DEL</button>
+      <button class="key" onclick="btnPressed('C')">C</button>
+      <button class="key" onclick="btnPressed('+')">+</button>
+      <button class="key" onclick="btnPressed(7)">7</button>
+      <button class="key" onclick="btnPressed(8)">8</button>
+      <button class="key" onclick="btnPressed(9)">9</button>
+      <button class="key" onclick="btnPressed('-')">-</button>
+      <button class="key" onclick="btnPressed(4)">4</button>
+      <button class="key" onclick="btnPressed(5)">5</button>
+      <button class="key" onclick="btnPressed(6)">6</button>
+      <button class="key" onclick="btnPressed('*')">*</button>
+      <button class="key" onclick="btnPressed(3)">3</button>
+      <button class="key" onclick="btnPressed(2)">2</button>
+      <button class="key" onclick="btnPressed(1)">1</button>
+      <button class="key" onclick="btnPressed('/')">/</button>
+      <button class="key" onclick="btnPressed(0)">0</button>
+      <button class="key" onclick="btnPressed('.')">.</button>
+      <button class="key" onclick="btnPressed('=')">=</button>
+    </div>
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>
