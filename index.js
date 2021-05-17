@@ -121,7 +121,9 @@ function functionKey(key){
       document.getElementById("mini-display").innerHTML = miniDisplay
       break;    
     case 'DEL':
-      location.reload()
+      valueArr.pop()
+      miniDisplay.pop()
+      document.getElementById("mini-display").innerHTML = miniDisplay.join("")
       break;    
     case 'C':
       location.reload()
