@@ -59,6 +59,8 @@ function numberKey(key){
 }
 
 function operatorKey(key){
+  console.log(valueArr);
+  console.log(firstValue);
   if(currOperator === undefined){
     console.log("first",valueArr, currOperator);
     firstValue = Number(valueArr.join(""))
@@ -71,7 +73,19 @@ function operatorKey(key){
     document.getElementById("mini-display").innerHTML = miniDisplay
     document.getElementById("display").innerHTML = firstValue
   }
-  else if(currOperator !== undefined){
+  else if(currOperator !== undefined && typeof valueArr[1] === 'number'){
+    console.log("third",valueArr, currOperator);
+    firstValue = Number(valueArr.join(""))
+    valueArr = []
+    currOperator = key
+    valueArr.push(firstValue)
+    valueArr.push(currOperator)
+    miniDisplay = []
+    miniDisplay.push(valueArr.join(""))
+    document.getElementById("mini-display").innerHTML = miniDisplay
+    document.getElementById("display").innerHTML = firstValue
+  }
+  else if(currOperator !== undefined && typeof valueArr[1] !== 'number'){
     console.log("second",valueArr, currOperator);
     console.log(miniDisplay);
     valueArr.splice(0,2)
